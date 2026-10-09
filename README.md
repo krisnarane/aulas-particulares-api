@@ -2,6 +2,15 @@
 
 API em FastAPI para agendar aulas particulares entre alunos e professores. O projeto mostra uma modelagem simples com herança, polimorfismo, regras de negócio na camada de domínio e separação em `data`, `models`, `controllers` e `routes`.
 
+## Arquitetura do projeto
+
+O projeto foi organizado para separar responsabilidades de forma clara:
+
+- **Domínio**: fica em `app/models`, onde estão as regras de negócio e as entidades principais.
+- **Coleções**: ficam em `app/data`, com os mocks usados como fonte de dados em memória.
+- **MVC**: os `controllers` fazem a ponte entre os dados e a lógica da aplicação, e as `routes` expõem os endpoints da API.
+- **Rotas**: ficam em `app/routes`, organizando os acessos da API de forma separada por recurso.
+
 ## O que este projeto faz
 
 - cadastra e lista alunos, professores e aulas a partir de mocks em memória;
