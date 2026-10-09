@@ -1,4 +1,4 @@
-# Aulas Particulares API
+# 🌸 Aulas Particulares API 🌸
 
 API em FastAPI para agendar aulas particulares entre alunos e professores. O projeto mostra uma modelagem simples com herança, polimorfismo, regras de negócio na camada de domínio e separação em `data`, `models`, `controllers` e `routes`.
 
@@ -79,6 +79,15 @@ Depois abra `http://127.0.0.1:8000/docs`.
 | POST | `/api/aulas/{id}/cancelar` | cancela uma aula |
 | GET | `/api/alunos/{id}/aulas` | histórico de aulas de um aluno |
 | GET | `/api/relatorio/faturamento` | relatório de faturamento |
+
+## Divisão do trabalho
+
+| Integrante | O que fez |
+|---|---|
+| Julia Krisnarane | Montou a base inicial do projeto e desenvolveu a estrutura de `app`, os dados de alunos e as models de `Pessoa` e `Aluno`. |
+| Nicole Silvestrini | Desenvolveu os mocks de professores e aulas, além das models de `Professor` e `Aula`. |
+| Camila Ono | Implementou os controllers e o arquivo de verificação do projeto. |
+| Mariana Maia | Estruturou as rotas da API, o arquivo principal da aplicação, as dependências e a documentação. |
 
 ## Diagrama de classes
 
