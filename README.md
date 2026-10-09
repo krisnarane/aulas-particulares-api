@@ -195,8 +195,7 @@ classDiagram
     Pessoa <|-- Aluno
     Pessoa <|-- Professor
     Professor <|-- ProfessorEspecialista
-    Pessoa "1" --> "0..*" Aula
-    Aula "1" --> "1" Aluno
-    Aula "1" --> "1" Professor
+    Aluno "1" --> "0..*" Aula
+    Professor "1" --> "0..*" Aula
 ```
 
